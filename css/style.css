@@ -80,13 +80,55 @@ a{
     padding: 15px 5px 25px 5px;
 
 }
-.section-area .nav-menu a{
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu li{
+    display: inline-block;
+}
+.section-area .header-row .nav-menu a{
     padding: 8px 25px;
     font-family: var(--heading-font);
     font-weight: 600;
     transition: 0.3s;
+    position: relative;
 }
 
+.section-area .header-row .nav-menu a::before{
+     content:"";
+     position: absolute;
+     width: calc(100% - 50%);
+     height: 2px;
+     background-color:red;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50% );
+     opacity: 0;
+     transition: .3s;
+    
+}
+ 
 .section-area .nav-menu a:hover{
     color:var(--primary-color) ;
+}
+.section-area .nav-menu a:hover::before{
+    opacity: 1;
+}
+
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-right .template-btn{
+    padding: 16px 24px;
+    background-color: red;
+    font-family: var(--heading-font);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
 }
