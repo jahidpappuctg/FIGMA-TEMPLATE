@@ -1,0 +1,92 @@
+/* Template Name : foodest HTML Template
+Author: Namyem
+version: 1..
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&family=Lily+Script+One&display=swap');
+
+ 
+/* font-family: 'Lily Script One', cursive; */
+
+
+::root{
+    --heading-color: #252920;
+    --text-color:#666666;
+    --primary-gradiend:linear-gradient(275.98deg, #FF6666 52.08%, #FFB23F 100%);
+    --heading-font: 'Lexend', sans-serif;
+    --body-font:'Barlow', sans-serif;
+    --shadow-shadow: 4px 10px 40px rgba(146, 146, 146, 0.1);
+    --primary-color:#ff6666;
+}
+
+/* basic setup */
+
+body{
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+h1{
+    font-size: 72px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--heading-color);
+}
+a{
+    text-decoration: none;
+}
+
+/* headaer area */
+
+.section-area{
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-shadow);
+    padding: 15px 5px 25px 5px;
+
+}
+.section-area .nav-menu a{
+    padding: 8px 25px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.section-area .nav-menu a:hover{
+    color:var(--primary-color) ;
+}
